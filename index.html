@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Gallery</title>
+    </head>
+    <style>
+        body{
+            font-family: sans-serif;
+            max-width: 1024px;
+            width: 100%;
+        }
+
+        #grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            gap: 5vh;
+            padding: 1.5% 1.5%;
+            
+        }
+
+        #box {
+            background: linear-gradient(rgb(48, 167, 236) 85%, whitesmoke 85%);
+            background-color: rgb(48, 167, 236);
+            border-radius: 10px;
+            border: 1px solid gray;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 0.7em;
+            margin-bottom: 2%;
+        }
+
+        header {
+            margin: 1.5%;
+        }
+
+        p {
+            margin: 1.5%;
+        }
+
+        @media screen and (max-width: 1024px) {
+            #grid-container {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+            @media screen and (max-width: 768px) {
+            #grid-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+            @media screen and (max-width: 414px) {
+            #grid-container {
+                grid-template-columns: repeat(1, 0.5fr);
+            }
+        }
+    </style>
+    <body>
+        <header>Gallery Heading</header>
+            <div id="grid-container">
+                <div id="box">
+                    <img src="placeholder-image.png" alt="placeholder">
+                    <div class="title">Image Title</div>
+                </div>
+                <div id="box"><img src="placeholder-image.png" alt="placeholder">
+                    <div class="title">Image Title</div>
+                </div>
+                <div id="box"><img src="placeholder-image.png" alt="placeholder">
+                    <div class="title">Image Title</div>
+                </div>
+                <div id="box"><img src="placeholder-image.png" alt="placeholder">
+                    <div class="title">Image Title</div>
+                </div>
+                <div id="box"><img src="placeholder-image.png" alt="placeholder">
+                    <div class="title">Image Title</div>
+                </div>
+                <div id="box"><img src="placeholder-image.png" alt="placeholder">
+                    <div class="title">Image Title</div>
+                </div>
+                <div id="box"><img src="placeholder-image.png" alt="placeholder">
+                    <div class="title">Image Title</div>
+                </div>
+                <div id="box"><img src="placeholder-image.png" alt="placeholder">
+                    <div class="title">Image Title</div>
+                </div>
+                <div id="box"><img src="placeholder-image.png" alt="placeholder">
+                    <div class="title">Image Title</div>
+                </div>
+                <div id="box"><img src="placeholder-image.png" alt="placeholder">
+                    <div class="title">Image Title</div>
+                </div>
+            </div> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi accusantium quisquam 
+            consequuntur necessitatibus, architecto adipisci quaerat reprehenderit ipsam sequi 
+            sit vero sapiente saepe quod iste perferendis harum autem nihil sint?</p>       
+    </body>
+</html>
